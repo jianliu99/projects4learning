@@ -22,7 +22,7 @@ public class HijackAroundMethod implements MethodInterceptor {
 			Object result = methodInvocation.proceed();
 
 			// same with AfterReturningAdvice
-			System.out.println("HijackAroundMethod : Before after hijacked!");
+			System.out.println("HijackAroundMethod : After method hijacked!");
 
 			return result;
 

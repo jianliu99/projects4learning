@@ -1,0 +1,9 @@
+CONFIG
+Source Directories: C:\Users\dcohn\Desktop\Parallel Processing Presentation Info\Source
+                    C:\Users\dcohn\Desktop\Parallel Processing Presentation Info\Source2
+Target Directory: C:\users\dcohn\Desktop\Parallel Processing Presentation Info\Test Files
+Log Directory: C:\users\dcohn\Desktop\Parallel Processing Presentation Info\Logs
+Exception Log Directory: C:\users\dcohn\Desktop\Parallel Processing Presentation Info\Exception Logs
+Number of Threads: 4
+Session ID Server: 10.213.108.21
+Session ID Port: 11820

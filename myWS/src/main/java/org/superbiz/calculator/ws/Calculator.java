@@ -18,7 +18,7 @@ package org.superbiz.calculator.ws;
 
 import javax.ejb.Stateless;
 import javax.jws.WebService;
-
+   
 @Stateless
 @WebService(
         portName = "CalculatorPort",

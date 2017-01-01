@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Built-By: jenkins
+Build-Jdk: 1.7.0_25
+Created-By: Apache Maven 3.2.1
+Main-Class: org.apache.hadoop.examples.ExampleDriver
+Archiver-Version: Plexus Archiver
+

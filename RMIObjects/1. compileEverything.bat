@@ -1,0 +1,1 @@
+javac src/com/mkyong/rmiinterface/RMIInterface.java src/com/mkyong/rmiinterface/Book.java src/com/mkyong/rmiserver/Bookstore.java src/com/mkyong/rmiclient/Customer.java

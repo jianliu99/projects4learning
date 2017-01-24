@@ -1,0 +1,3 @@
+com\mkyong\common\validator\FileUploadValidator.class
+com\mkyong\common\controller\FileUploadController.class
+com\mkyong\common\model\FileUpload.class

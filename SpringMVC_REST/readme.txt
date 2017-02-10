@@ -1,0 +1,1 @@
+https://www.mkyong.com/spring-mvc/spring-3-rest-hello-world-example/

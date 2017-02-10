@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC 
+"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" 
+"http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+	<form-beans>
+		<form-bean
+			name="userForm"
+			type="com.mkyong.common.form.UserForm"/>
+	
+	</form-beans>
+
+	<action-mappings>
+	
+		<action
+			path="/LoginPage"
+			type="org.apache.struts.actions.ForwardAction"
+			parameter="/pages/multi-language.jsp"/>
+		
+		<action
+			path="/Submit"
+			type="com.mkyong.common.action.LanguageSelectAction"
+			name="userForm"
+			validate="true"
+			input="/pages/multi-language.jsp"
+			>
+			<forward name="success" path="/pages/multi-language.jsp"/>
+		</action>
+		
+		<action
+			path="/Locale"
+			type="com.mkyong.common.action.LanguageSelectAction"
+			name="userForm"
+			parameter="method"
+			validate="false"
+			>
+			<forward name="success" path="/pages/multi-language.jsp"/>
+		</action>
+		
+	</action-mappings>
+
+	<message-resources
+		parameter="com.mkyong.common.properties.Common" />
+
+</struts-config>

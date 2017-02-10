@@ -1,0 +1,1 @@
+https://www.mkyong.com/struts/struts-internationalizing-or-localization-example/

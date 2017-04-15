@@ -1,0 +1,5 @@
+com\mkyong\testng\examples\exception\TestRuntime.class
+com\mkyong\testng\examples\exception\TestCheckedException.class
+com\mkyong\testng\examples\ignore\TestIgnore.class
+com\mkyong\testng\examples\timeout\TestTimeout.class
+com\mkyong\testng\examples\loadtest\TestMultipleThreads.class

@@ -1,0 +1,1 @@
+Tutorial URL : http://www.mkyong.com/unittest/testng-tutorial-3-ignore-test/

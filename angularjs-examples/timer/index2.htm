@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <script src="http://code.angularjs.org/angular-1.0.0rc11.min.js"></script>
+    <script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
+</head>
+<body>
+<script>
+function AlbumCtrl($scope,$timeout) {
+    $scope.counter = 0;
+    $scope.onTimeout = function(){
+        $scope.counter++;
+        mytimeout = $timeout($scope.onTimeout,1000);
+    }
+    var mytimeout = $timeout($scope.onTimeout,1000);
+    
+    $scope.stop = function(){
+        $timeout.cancel(mytimeout);
+    }
+            
+}
+
+</script>
+<div ng-controller="AlbumCtrl">
+{{counter}}
+    <button ng-click="stop()">Stop</button>    
+</div>
+</body>
+</html>

@@ -2,7 +2,6 @@
 <html ng-app>
 <head>
     <script src="http://code.angularjs.org/angular-1.0.0rc11.min.js"></script>
-    <script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
 </head>
 <body>
 <script>
@@ -17,13 +16,19 @@ function AlbumCtrl($scope,$timeout) {
     $scope.stop = function(){
         $timeout.cancel(mytimeout);
     }
-            
+	
+        $scope.restart = function(){
+         mytimeout = $timeout($scope.onTimeout,1000);
+    }
+                   
 }
 
 </script>
 <div ng-controller="AlbumCtrl">
 {{counter}}
-    <button ng-click="stop()">Stop</button>    
+    <button ng-click="stop()">Stop</button>
+	<button ng-click="restart()">restart</button> 
+	
 </div>
 </body>
 </html>

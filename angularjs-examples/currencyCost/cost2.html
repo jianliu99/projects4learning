@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+  <meta charset="UTF-8">
+  <title>Example - example-guide-concepts-1-production</title>
+  
+  <script src="http://code.angularjs.org/angular-1.0.0rc11.min.js"></script>
+
+  
+</head>
+<script>
+function ctrl($scope,$timeout) {
+  $scope.counter = 0;
+    $scope.onTimeout = function(){
+        $scope.counter++;
+        mytimeout = $timeout($scope.onTimeout,1000);
+    }
+    var mytimeout = $timeout($scope.onTimeout,1000);
+    
+    $scope.stop = function(){
+        $timeout.cancel(mytimeout);
+    }
+	
+        $scope.restart = function(){
+         mytimeout = $timeout($scope.onTimeout,1000);
+    }}
+
+</script>
+<body>
+
+<div ng-controller="ctrl">
+{{counter}}, {{counter}} 
+Quantity: <input type="number" min="0" ng-model="counter"> 
+
+</div>
+</body>
+</html>
+

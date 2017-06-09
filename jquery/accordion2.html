@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Accordion - Default functionality</title>
+  <!--
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+-->
+</head>
+
+<body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript">
+
+$(function() // run after page loads 
+{ 
+  $("#toggle, #toggle2").click(function() 
+  {  
+    // hides matched elements if shown, shows if hidden 
+    $("#content, #contentHidden").toggle(); 
+  }); 
+});
+</script>
+
+<a id="toggle" href="javascript:void(0);">Expand box 1</a> 
+<div id="content">Content 1</div> 
+<div id="contentHidden" style="display:none;">Hidden 1</div>
+
+<br><br>
+
+<a id="toggle2" href="javascript:void(0);">Expand box 2</a> 
+<div id="content">Content 2</div> 
+<div id="contentHidden" style="display:none;">Hidden 2</div>
+
+
+</body>
+</html>

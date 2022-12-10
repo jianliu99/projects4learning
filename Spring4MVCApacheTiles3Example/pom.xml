@@ -10,7 +10,7 @@
 	<name>Spring4MVCApacheTiles3Example</name>
 
   	<properties>
-		<springframework.version>4.2.6.RELEASE</springframework.version>
+		<springframework.version>6.0.0</springframework.version>
 		<apachetiles.version>3.0.5</apachetiles.version>
 	</properties>
 
